@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin: unset;
+      background-color: hsl(0, 0%, 81%);
+    }
+
+    .barlow-500{
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-weight: 500;
+    }
+
+    .barlow-600{
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-weight: 600;
+    }
+
+    .angry-grid {
+      display: grid; 
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;   
+      gap: 32px;
+      height: 100%;     
+      padding: 30px 30px 0;
+    }
+      
+    #item-0 {
+      background-color: hsl(263, 55%, 52%); 
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 3;     
+      height: fit-content; 
+      border-radius: 10px;
+      color: #ffffff;
+    }
+
+    #item-1 {
+      background-color:hsl(217, 19%, 35%); 
+      grid-row-start: 1;
+      grid-column-start: 3;
+      grid-row-end: 2;
+      grid-column-end: 4;   
+      height: fit-content; 
+      border-radius: 10px;
+      color: #ffffff;
+    }
+
+    #item-2 {
+      background-color: hsl(0, 0%, 100%); 
+      grid-row-start: 1;
+      grid-column-start: 4;
+      grid-row-end: 3;
+      grid-column-end: 5;     
+      height: fit-content; 
+      border-radius: 10px;
+    }
+
+    #item-3 {
+      background-color: hsl(219, 29%, 14%); 
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-row-end: 3;
+      grid-column-end: 4;  
+      height: fit-content; 
+      border-radius: 10px;
+      color: #ffffff;
+    }
+
+    #item-4 {
+      background-color: hsl(0, 0%, 100%); 
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-column-end: 2;
+      height: fit-content; 
+      border-radius: 10px;
+    }
+
+    .flex-container {
+      display: flex;  
+      /* flex-flow: column; */ 
+      flex-direction: column;  
+      height: 100%;
+      padding: 15px;
+      gap: 5px;
+      }
+
+    .flex-container > div{
+      padding: 0 8px;
+      height: fit-content;
+    }
+
+    .image-name{
+      display: flex;  
+      /* flex-flow: row; */ 
+      flex-direction: row;  
+      height: 100%;
+      padding: 15px;
+      gap: 5px;
+    }
+
+    .image-name > div{
+      padding: 8px;
+      height: fit-content;
+    }
+
+    p{
+      margin-block-start: unset;
+      margin-block-end: unset;
+    }
+
+    .image-style{
+      border-radius: 100px;
+      width: 50px;
+    }
+
+    .h3-mt-0{
+      margin-block-start: unset;
+    }
+
+    .with-svg{
+      background-image: url(images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      float: right;
+      background-position: 80% 0%;
+    }
+
+    .white-bg-name{
+      color: hsl(217, 19%, 35%);
+    }
+
+    .white-bg-desc{
+      color: hsl(217, 19%, 35%, 0.5);
+    }
+
+    .white-bg-header{
+      color: hsl(217, 19%, 35%);
+    }
+
+    .white-bg-text{
+      color: hsl(217, 19%, 35%, 0.7);
+    }
+
+    .text-opacity-50{
+      color: hsl(0, 0%, 100%, 0.5);
+    }
+
+    .text-opacity-70{
+      color: hsl(0, 0%, 100%, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="angry-grid">
+    <div id="item-0" class="flex-container with-svg">
+      <div class="image-name">
+        <div class="image-avatar">
+          <img src="images/image-daniel.jpg" class="image-style" alt="">
+        </div>
+        <div class="user-name">
+          <p class="barlow-600"> Daniel Clifford </p>
+          <p class="barlow-500 text-opacity-50"> Verified Graduate </p>
+        </div>
+      </div>
+      <div class="item2" >
+        <h3 class="barlow-600 h3-mt-0"> I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.</h3>
+        <p class="barlow-500 text-opacity-70">“ I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+      </div>
+    </div>
+    <div id="item-1" class="flex-container">
+      <div class="image-name">
+        <div class="image-avatar">
+          <img src="images/image-jonathan.jpg" class="image-style" alt="">
+        </div>
+        <div class="user-name">
+          <p class="barlow-600">  Jonathan Walters </p>
+          <p class="barlow-500 text-opacity-50"> Verified Graduate </p>
+        </div>
+      </div>
+      <div class="item2" style="padding-left: 15px; padding-right: 15px;">
+        <h3 class="barlow-600 h3-mt-0"> The team was very supportive and kept me motivated. </h3>
+        <p class="barlow-500 text-opacity-70">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself. ”</p>
+      </div>
+    </div>
+    <div id="item-2" class="flex-container">
+      <div class="image-name">
+        <div class="image-avatar">
+          <img src="images/image-kira.jpg" class="image-style" alt="">
+        </div>
+        <div class="user-name">
+          <p class="barlow-600 white-bg-name"> Kira Whittle </p>
+          <p class="barlow-500 white-bg-desc"> Verified Graduate </p>
+        </div>
+      </div>
+      <div class="item2" >
+        <h3 class="barlow-600 h3-mt-0 white-bg-header"> Such a life-changing experience. Highly recommended!</h3>
+        <p class="barlow-500 white-bg-text">“ Before joining the bootcamp, I've never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I've often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+      </div>
+    </div>
+    <div id="item-3" class="flex-container">
+      <div class="image-name">
+        <div class="image-avatar">
+          <img src="images/image-patrick.jpg" class="image-style" alt="">
+        </div>
+        <div class="user-name">
+          <p class="barlow-600"> Patrick Abrams </p>
+          <p class="barlow-500 text-opacity-50"> Verified Graduate </p>
+        </div>
+      </div>
+      <div class="item2" style="padding-left: 15px; padding-right: 15px;">
+        <h3 class="barlow-600 h3-mt-0"> Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h3>
+        <p class="barlow-500 text-opacity-70">  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+      </div>
+    </div>
+    <div id="item-4" class="flex-container">
+      <div class="image-name">
+        <div class="image-avatar">
+          <img src="images/image-jeanette.jpg" class="image-style" alt="">
+        </div>
+        <div class="user-name">
+          <p class="barlow-600 white-bg-name"> Jeanette Harmon </p>
+          <p class="barlow-500 white-bg-desc"> Verified Graduate </p>
+        </div>
+      </div>
+      <div class="item2" style="padding-left: 15px; padding-right: 15px;">
+        <h3 class="barlow-600 h3-mt-0 white-bg-header"> An overall wonderful and rewarding experience.</h3>
+        <p class="barlow-500 white-bg-text">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">K-t</a>.
+  </div>
+</body>
+</html>
